@@ -28,13 +28,13 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'cover',
     position: 'absolute',
-  }, 
+  },
 
-  buttonsContainer: {
-    //position: 'absolute',
-    bottom: 90,
-    width: '100%',
-  }
+  sub: {
+    fontSize: 26,
+    color: '#5c5e62',
+    paddingBottom: 20,
+  },
 });
 
 export default styles;
