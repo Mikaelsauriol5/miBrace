@@ -1,9 +1,11 @@
+import { withTheme } from '@emotion/react';
 import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
 	braceContainer: {
     width:'100%',
     height:'100%',
+    backgroundColor: 'black',
   },
 
   titles: {
@@ -35,6 +37,10 @@ const styles = StyleSheet.create({
     color: '#5c5e62',
     paddingBottom: 20,
   },
+
+  buttonSignOut: {
+    backgroundColor: "red",
+  }
 });
 
 export default styles;

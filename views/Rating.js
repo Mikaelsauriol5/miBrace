@@ -47,15 +47,15 @@ const Rating = () => {
                     height: 40,
                     width:160,
                     borderRadius:10,
-                    backgroundColor : "white",
+                    backgroundColor : "grey",
                     marginLeft :130,
                     marginRight:50,
-                    marginTop :100
+                    marginTop :70
                 }}>
             <Button
             onPress={() => Alert.alert('Bien envoye. Merci pour ton temps!')}           
             title="Envoyer"
-            color="black"
+            color="white"
           /> 
           </TouchableHighlight> 
     </View>
