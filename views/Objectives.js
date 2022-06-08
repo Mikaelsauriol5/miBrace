@@ -18,8 +18,9 @@ const Objectives = (props) => {
     const docName = auth.currentUser.email + " " + moment().format("YYYY-MM-DD");
     const docRef = doc(db, "Heures", docName);
     const docSnap = await getDoc(docRef);
-    
+    if(docSnap){
     setHeures(docSnap.data().HeuresAujourdhui)
+    }
   };
 
   const getUserAverage = async () => {
@@ -193,7 +194,7 @@ const updateUser = async (d) => {
         user: auth.currentUser?.uid,
         user_email: auth.currentUser?.email,
         date: moment().format("lll"),
-        HeuresAujourdhui: data,
+        HeuresAujourdhui: d,
         // HeuresMoyenne: data,
       }
     ).then(Alert.alert("Bien envoye. Merci pour ton temps!"));
